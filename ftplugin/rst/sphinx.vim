@@ -14,7 +14,7 @@ if scriptdir not in sys.path:
     sys.path.insert(0, scriptdir)
 from sphinxvim import *
 for i in range(6):
-    vim.command('map <leader><leader>%(i)d :python update_heading(%(i)d)<CR>' % dict(i=i))
+    vim.command('map <leader><leader>%(i)d :python update_heading(%(i)d)<CR>' % dict(i=i+1))
 endpython
 
 "fun! RstMappingsHeading()
